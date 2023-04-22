@@ -14,6 +14,7 @@ console.log(`Basket is now ${basket}`);
 console.log('Adding water bed (expect true):', addItem('water bed'));
 console.log(`Basket is now ${basket}`);
 
+// Just adding some more items to make the list longer...
 addItem('disco ball');
 addItem('ABBA album')
 
