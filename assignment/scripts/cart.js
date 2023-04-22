@@ -26,7 +26,7 @@ function listItems() {
 listItems();
 
 function empty() {
-    basket = [];
+    console.log('I dumped out the cart on the dancefloor and the basket is now (expect empty array):',basket = []);
 }
 
 empty();
