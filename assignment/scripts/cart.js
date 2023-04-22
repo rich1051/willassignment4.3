@@ -1,20 +1,32 @@
 console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
+
 let basket = [];
-const max = 5;
-function addItem(){
-    if (basket.length <= 5){
-        basket.push('lava lamp');
-        return true;
-    }
-    else{
-        return 'I think I have enough.';
-    }
+function addItem(item) {
+    basket.push(item);
+    return true;
 }
-console.log(`Basket is ${basket}`);
+
+console.log(`Basket is (expect nothing): ${basket}`);
 console.log('Adding lava lamp (expect true):', addItem('lava lamp'));
 console.log(`Basket is now ${basket}`);
+console.log('Adding water bed (expect true):', addItem('water bed'));
+console.log(`Basket is now ${basket}`);
 
-function listItems(){
+addItem('disco ball');
+addItem('ABBA album')
+
+function listItems() {
+    for (let item of basket) {
+    console.log('I went down the aisle and threw',item,'in the cart!');
+    }
 }
+
+listItems();
+
+function empty() {
+    basket = [];
+}
+
+empty();
